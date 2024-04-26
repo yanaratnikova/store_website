@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+body {
+  scroll-behavior: smooth;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.header {
+  background: rgb(34, 34, 34);
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+.header__nav__div1 {
+  padding: 18px;
+  display: flex;
+justify-items: last baseline;
+  gap: 41px;
+}
+
+.header__nav__div2 {
+  padding: 26px;
+  display: flex;
+  gap: 33px;
+}
+.back_ground_section {
+  background: rgb(241, 228, 230);
+}
+a, h1, h2, p, button{
+  font-family: Lato;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.main__rightSide {
+
+  max-width: 799.42px;
+  height: 764px;
+
+}
+.main__rightSide h1 {
+   font-size: 48px;
+  line-height: 1px;
+  letter-spacing: 0%;
+ align-items: center;
+  margin-bottom: 40px;
+  justify-content: flex-end;
+}
+.main__rightSide h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.mainContent {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(1, 1fr);
+}
+.card {
+display: flex;
+flex-direction: column;
+align-items: baseline;
+}
+.card2 {
+justify-content: center;
+}
+.card1 {
+justify-content: end;
+}
+.colored-side {
+  position: relative;
+  padding: 28px;
+
+}
+.colored-side:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 12px;
+  background-color: rgb(241, 109, 127);;
+}
+
+
+
