@@ -11,7 +11,7 @@ body {
   scroll-behavior: smooth;
 }
 img {
-  display: block;
+  display: flex;
   max-width: 100%;
 }
 .header {
@@ -19,8 +19,10 @@ img {
 }
 .navigation {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
+
 .header__nav__div1 {
   padding: 18px;
   display: flex;
@@ -68,6 +70,7 @@ a, h1, h2, p, button{
 display: grid;
 grid-template-columns: repeat(2, 1fr);
 grid-template-rows: repeat(1, 1fr);
+margin-bottom: 65px;
 }
 .card {
 display: flex;
@@ -93,6 +96,30 @@ justify-content: end;
   height: 100%;
   width: 12px;
   background-color: rgb(241, 109, 127);;
+}
+.fotoGelery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+}
+.foto {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.ton {
+  position: relative;
+  display: inline-block;
+}
+.ton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 22, 22, 0.70);
 }
 
 
