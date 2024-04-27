@@ -138,6 +138,79 @@ justify-content: end;
   height: 69%;
   background-color: rgba(33, 22, 22, 0.70);
 }
+.containerForText {
+  position: relative;
+  text-align: center;
+  color: aliceblue;
+}
+.text {
+  position: absolute;
+  left: 30%;
+  transform: (-20%, -50%);
+  top: 50%;
+  left: 30%;
+  transform: (-50%, -50%);
+}
+.textBig {
+  position: absolute;
+  left: 50%;
+  transform: (-50%, -50%);
+  top: 25%;
+  left: 40%;
+  transform: (-50%, -50%);
+}
+.FeturedItems {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-bottom: 47px;
+}
+.FeturedItems h1 {
+  color: rgb(34, 34, 34);
+font-family: Lato;
+font-size: 30px;
+font-weight: 400;
+line-height: 36px;
+}
+.FeturedItems p {
+  color: #9F9F9F;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cardList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 48px;
+}
+.cardItem {
+  background: rgb(248, 248, 248);
+}
+.cardItem div {
+  padding: 17px 30px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: start;
+}
+.cardItem div h3 {
+  color: rgb(0, 0, 0);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.cardItem div p {
+  color: rgb(93, 93, 93);
+font-family: Lato;
+font-size: 14px;
+font-weight: 300;
+line-height: 17px;
+}
+
 
 
 
