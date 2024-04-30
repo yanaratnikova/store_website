@@ -34,13 +34,11 @@ justify-items: last baseline;
   display: flex;
   gap: 33px;
 }
-.back_ground_section {
-  background: rgb(241, 228, 230);
-}
+
 a, h1, h2, p, button{
   font-family: Lato;
 }
-.containarMain {
+.containerMain {
   max-width: 1600px;
   margin: 0 auto;
 }
@@ -48,27 +46,7 @@ a, h1, h2, p, button{
   max-width: 1140px;
   margin: 0 auto;
 }
-.main__rightSide {
 
-  max-width: 799.42px;
-  height: 764px;
-
-}
-.main__rightSide h1 {
-   font-size: 48px;
-  line-height: 1px;
-  letter-spacing: 0%;
- align-items: center;
-  margin-bottom: 40px;
-  justify-content: flex-end;
-}
-.main__rightSide h2 {
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 1px;
-  letter-spacing: 0%;
-  text-align: left;
-}
 .mainContent {
 display: grid;
 grid-template-columns: repeat(2, 1fr);
@@ -76,16 +54,24 @@ grid-template-rows: repeat(1, 1fr);
 margin-bottom: 65px;
 }
 .card {
+  background: rgb(241, 228, 230);
 display: flex;
 flex-direction: column;
 align-items: baseline;
-}
-.card2 {
+text-align: left;
 justify-content: center;
+gap: 40px;
 }
-.card1 {
-justify-content: end;
+.card2 h1 {
+  font-weight: 900;
+  font-size: 48px;
 }
+.card2 h2 {
+  font-weight: 700px;
+  font-size: 32px;
+}
+
+
 .colored-side {
   position: relative;
   padding: 28px;
@@ -94,9 +80,10 @@ justify-content: end;
 .colored-side:before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 10;
   left: 0;
-  height: 100%;
+  
+  height: 70%;
   width: 12px;
   background-color: rgb(241, 109, 127);;
 }
@@ -234,26 +221,23 @@ cursor: pointer;
   justify-content: center;
   margin-bottom: 60.5px;
 }
-.footer {
-  padding: 104px 200px 104px 200px;
+.footerList {
+  padding: 30px;
   background: rgb(34, 34, 36);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1, 1fr);
-
+  gap: 30px;
   margin-bottom: 48px;
 }
-.footer h2 {
+.footerList h2 {
   color: rgb(251, 251, 251);
   font-family: Lato;
   font-size: 19.96px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0%;
-  text-align: left;
-  margin-bottom: 16px;
-}
-.footer p {
+ }
+.footerList p {
   color: rgb(251, 251, 251);
   width: 360px;
   height: 34px;
@@ -261,11 +245,12 @@ cursor: pointer;
   font-weight: 300;
 }
 .footer_card {
-width: 360px;
-height: 134px;
+padding: 30px;
 display: flex;
 flex-direction: column;
 gap: 20px;
 align-items: center;
 text-align: center;
+}
+@media(min-width: 768px) and (max-width: 1600px) {
 }
