@@ -11,7 +11,8 @@ body {
   scroll-behavior: smooth;
 }
 img {
-  display: flex;
+display: block;
+ max-width: 100%;
  }
 .header {
   background: rgb(34, 34, 34);
@@ -48,25 +49,24 @@ a, h1, h2, p, button{
 }
 
 .mainContent {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: repeat(1, 1fr);
+  background: rgb(241, 228, 230);
+  display: flex;
+   align-items: center;
+   text-align: left;
+justify-content: center;
 margin-bottom: 65px;
 }
-.card {
-  background: rgb(241, 228, 230);
-display: flex;
-flex-direction: column;
-align-items: baseline;
-text-align: left;
-justify-content: center;
-gap: 40px;
+.mainContent img {
+
+    width: 50%;
+  
 }
-.card2 h1 {
+
+.mainContent h1 {
   font-weight: 900;
   font-size: 48px;
 }
-.card2 h2 {
+.mainContent h2 {
   font-weight: 700px;
   font-size: 32px;
 }
@@ -80,7 +80,7 @@ gap: 40px;
 .colored-side:before {
   content: "";
   position: absolute;
-  top: 10;
+  top: 25;
   left: 0;
   
   height: 70%;
@@ -253,4 +253,37 @@ align-items: center;
 text-align: center;
 }
 @media(min-width: 768px) and (max-width: 1600px) {
+  .containerMain {
+    max-width: 768px;
+   
+    }
+  .container {
+    max-width: 734.58px;
+    
+  }
+  .card {
+    width: 386px;
+    height: 368px;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+  }
+
+  .cardList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 48px;
+  }
+  .footerList {
+    padding: 30px;
+    background: rgb(34, 34, 36);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 48px;
+  }
 }
