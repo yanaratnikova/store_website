@@ -113,7 +113,7 @@ margin-bottom: 65px;
 }
 .foto-big {
   grid-column: span 3;
-  grid-row: span 1,5;
+  grid-row: span 1,74;
 }
 .ton-big {
   position: relative;
@@ -129,9 +129,10 @@ margin-bottom: 65px;
   background-color: rgba(33, 22, 22, 0.70);
 }
 .containerForText {
-  position: relative;
+
   text-align: center;
   color: aliceblue;
+
 }
 .text {
   position: absolute;
@@ -140,6 +141,9 @@ margin-bottom: 65px;
   top: 50%;
   left: 30%;
   transform: (-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .textBig {
   position: absolute;
@@ -285,5 +289,33 @@ text-align: center;
     grid-template-rows: repeat(3, 1fr);
     gap: 30px;
     margin-bottom: 48px;
+  }
+  .text {
+   
+    left: 20%;
+    right: 20%;
+    transform: (-30%, -50%);
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .textBig {
+    position: absolute;
+    left: 50%;
+    transform: (-50%, -50%);
+    top: 20%;
+    left: 30%;
+    right: 30%;
+    transform: (-50%, -50%);
+  }
+  .ton-big::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 72%;
+    background-color: rgba(33, 22, 22, 0.70);
   }
 }
