@@ -39,6 +39,24 @@ justify-items: last baseline;
 a, h1, h2, p, button{
   font-family: Lato;
 }
+.korzina {
+  position: relative;
+}
+.korzina::before {
+  content: url(./img/krug.svg);
+  position: absolute;
+   top: -8px;
+  right: -10px;
+  
+}
+.korzina::after {
+  content: "5";
+  position: absolute;
+  color: #E1E1E1;
+   top: -8px;
+  right: -5px;
+  z-index: 1;
+}
 .containerMain {
   max-width: 1600px;
   margin: 0 auto;
@@ -50,6 +68,59 @@ a, h1, h2, p, button{
 .main {
 background: rgb(241, 228, 230);
 margin-bottom: 65px;
+position: relative;
+}
+.mainMenu {
+  top: 0;
+  right: 300px;
+  position: absolute;
+
+}
+
+.mainMenuCard {
+  margin: 0;
+  background-color:  #FFF;
+padding: 32px;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+ gap: 8px;
+ box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  
+}
+.mainMenuCard h1 {
+  color: #000;
+
+font-family: Lato;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.mainMenuCard h2 {
+text-align: left;
+color: #F16D7F;
+
+font-family: Lato;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.mainMenuCard a {
+  color: #6F6E6E;
+
+font-family: Lato;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.mainMenuModul {
+padding: 20px 30px 20px 20px;
+display: flex;
+  flex-direction: column;
+gap: 10px;
 }
 
 .mainContent {
