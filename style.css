@@ -45,16 +45,16 @@ a, h1, h2, p, button{
 .korzina::before {
   content: url(./img/krug.svg);
   position: absolute;
-   top: -8px;
-  right: -10px;
+   top: -1px;
+  right: -2px;
   
 }
 .korzina::after {
   content: "5";
   position: absolute;
   color: #E1E1E1;
-   top: -8px;
-  right: -5px;
+   top: -1px;
+ left: 36px;
   z-index: 1;
 }
 .containerMain {
@@ -414,6 +414,17 @@ line-height: normal;
   gap: 30px;
   align-items: center;
 }
+
+.emailBox {
+position: relative;
+right: 20px;
+
+}
+.basementButton {
+  position: absolute;
+ right: 70px;
+  z-index: 1;
+}
 .basementCard2Title {
   text-align: center;
 } 
@@ -525,9 +536,9 @@ line-height: normal;
   .text h1 {
 
 font-family: Lato;
-font-size: 24px;
+font-size: 16px;
 font-style: normal;
-font-weight: 700;
+font-weight: 400;
 line-height: normal;
   }
   .textBig h2 {
@@ -542,9 +553,9 @@ line-height: normal;
   .textBig h1 {
 
 font-family: Lato;
-font-size: 24px;
+font-size: 16px;
 font-style: normal;
-font-weight: 700;
+font-weight: 400;
 line-height: normal;
   }
   .FeturedItems h1 {
@@ -789,7 +800,9 @@ gap: 150px;
   align-items: center;
   margin-bottom: 10px;
 }
+
 .emailBox {
+
 border: none;
 width: 200px;
 height: 39px;
