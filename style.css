@@ -322,6 +322,68 @@ button:hover {
 	box-shadow: inset 0 0 0 3px #FF6A6A;
   
 }
+/* Настройки маркированного списка */
+.hover-effect-cover {
+    list-style:none;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
+.hover-effect-cover li {
+    position: relative;
+    width: 100%; /* Задаем ширину элемента списка с картинкой*/
+    display: inline-block;
+    background-color: #fff;
+    margin: 0;
+    border: none;
+    box-shadow: 1px 3px 1px 0 rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.hover-effect-cover li button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+      padding: 15px;
+   background-color: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+   border-color: #FBFBFB;
+    margin: 0 auto;
+    transition: all 0.4s ease-in-out;
+}
+.hover-effect-cover li a:hover {
+    background: rgba(58, 56, 56, 0.86);
+    color: #fff;
+}
+/* Выезжающий блок с текстом для панели слева направо */
+.hover-effect-cover li > div.effect-to-right {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.hover-effect-cover li:hover > div.effect-to-right {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.hover-effect-cover li div.effect-to-right {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.3); /* Фон блока при наведении */
+    transition: all 0.4s ease-in-out;
+    color: #fff;
+    transform: translate(-250px, 0px) rotate(0deg); /* Направление выезжающей панели */
+}
+.hover-effect-cover li:hover div.effect-to-right {
+    opacity: 1;
+    transform: translate(0px, 0px) rotate(0deg);
+}
+
 .footer {
  background: rgb(34, 34, 36);
 }
