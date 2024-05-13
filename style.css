@@ -167,8 +167,7 @@ gap: 10px;
 
 .colored-side {
     padding: 2px 1px 3px 12px;
-  width: 300px;
-  height: 50px;
+
   border-left: 12px solid rgb(241, 109, 127);
 
 }
@@ -733,13 +732,13 @@ padding: 9px;
     display: none;
   }
   .mainContent {
-  padding: 146px;
+padding: 148px 56px 149px 83px;
   }
-  .mainContent h1 {
+  .colored-side h1 {
     font-size: 38px;
     font-weight: 900;
   }
-  .mainContent h2 {
+  .colored-side h2 {
   font-size: 20px;
   font-weight: 700;
 
