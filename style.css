@@ -166,20 +166,13 @@ gap: 10px;
 
 
 .colored-side {
-  position: relative;
-  padding: 28px;
+    padding: 2px 1px 3px 12px;
+  width: 300px;
+  height: 50px;
+  border-left: 12px solid rgb(241, 109, 127);
 
 }
-.colored-side:before {
-  content: "";
-  position: absolute;
-  top: 25;
-  left: 0;
-  
-  height: 70%;
-  width: 12px;
-  background-color: rgb(241, 109, 127);;
-}
+
 .fotoGelery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -847,7 +840,7 @@ object-position: bottom;
 gap: 150px;
 }
 .basementCard1 {
-  padding: 20px;
+padding: 64px 20px 30px 10px;
   max-width: 360px;
   max-height: 100px;
   display: flex;
