@@ -155,19 +155,18 @@ gap: 10px;
     width: 50%;
 }
 
-.mainContent h1 {
+.colored-side h1 {
   font-weight: 900;
   font-size: 48px;
 }
-.mainContent h2 {
+.colored-side h2 {
   font-weight: 700px;
   font-size: 32px;
 }
 
 
 .colored-side {
-    padding: 2px 1px 3px 12px;
-
+  padding: 2px 1px 3px 12px;
   border-left: 12px solid rgb(241, 109, 127);
 
 }
@@ -741,9 +740,11 @@ padding: 148px 56px 149px 83px;
   .colored-side h2 {
   font-size: 20px;
   font-weight: 700;
-
   }
- 
+ .colored-side {
+  padding: 2px 1px 3px 12px;
+  border-left: 12px solid rgb(241, 109, 127);
+}
   .man {
     display: none;
   }
